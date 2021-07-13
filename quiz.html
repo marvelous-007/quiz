@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz application</title>
+</head>
+<body>
+    Q1. what is 2 + 3<br>
+    <input type="radio" name="question1" id="correct1">5<br>
+    <input type="radio" name="question1">8<br>
+    <input type="radio" name="question1">10<br>
+    <input type="radio" name="question1">9<br>
+
+    Q2. what is 8 + 3<br>
+    <input type="radio" name="question2">2<br>
+    <input type="radio" name="question2">8<br>
+    <input type="radio" name="question2" id="correct2">11<br>
+    <input type="radio" name="question2">9<br>
+    
+    Q3. what is 28 + 3<br>
+    <input type="radio" name="question3">15<br>
+    <input type="radio" name="question3" id="correct3">31<br>
+    <input type="radio" name="question3">10<br>
+    <input type="radio" name="question3">19<br> 
+
+
+    <input type="submit" name="submit" value="submitQuiz" onclick="result()">
+
+    <script type="text/javascript">
+    function result() {
+        // body...
+        let score=0;
+       if  (document.getElementById('correct1').checked) {
+           score++;
+       }
+       if  (document.getElementById('correct2').checked) {
+           score++;
+       }
+       if  (document.getElementById('correct3').checked) {
+           score++;
+       }
+       alert();
+       document.write("Your score is:"+score)
+       
+    }
+    </script>
+    
+</body>
+</html>
